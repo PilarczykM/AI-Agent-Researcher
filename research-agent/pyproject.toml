@@ -1,12 +1,19 @@
 [project]
-name = "mvp-agent"
+name = "research-agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "langchain-mcp-adapters>=0.1.7",
+    "firecrawl-py>=2.9.0",
     "langchain-openai>=0.3.25",
+    "langgraph>=0.4.8",
+    "pydantic>=2.11.7",
     "pydantic-settings>=2.10.0",
     "rich>=14.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "grandalf>=0.8",
 ]
